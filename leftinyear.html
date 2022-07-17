@@ -68,7 +68,7 @@
     function showRemaining (){
     now = new Date();
     distance = end - now;
-    distance2 = new Date("01/01/2023 00:00 AM") - now
+    distance2 = new Date("01/01/2022 00:00 AM") - now
     if (distance <= 0 ){
       clearInterval (timer)
       document.getElementById("counter").innerHTML = "<h2>Nothing! It's Over<h2>";
@@ -76,7 +76,7 @@
     }
     else if (distance2 > 0  ){
       clearInterval (timer)
-      document.getElementById("counter").innerHTML =  "<h2>2023 Didn't Start yet!</h2>";
+      document.getElementById("counter").innerHTML =  "<h2>2021 Didn't Start yet!</h2>";
       return
     } 
     days = Math.floor(distance / _day)
